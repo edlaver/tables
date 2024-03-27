@@ -1,6 +1,6 @@
 {
   "name": "tables",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Tables is a simple command-line tool and powerful library for importing data like a CSV or JSON file into relational tables quickly and easily.",
   "main": "index.js",
   "bin": {
@@ -58,7 +58,7 @@
     "pg-hstore": "^2.3.3",
     "replace-ext": "^2.0.0",
     "sequelize": "^6.3.5",
-    "sqlite3": "^5.0.1",
+    "sqlite3": "^5.1.7",
     "tito": "^0.6.1"
   },
   "devDependencies": {
