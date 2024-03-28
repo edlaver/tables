@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "mocha tests/*",
+    "charity": "node ./bin/tables.js -i examples/charity.csv --key=id",
     "example-water": "./bin/tables.js -i examples/nyc-water-quality-complaints.csv",
     "example-water-silent": "./bin/tables.js -i examples/nyc-water-quality-complaints.csv --db=sqlite://examples/waterx-silent.sqlite --silent",
     "example-water-advanced": "./bin/tables.js -i examples/nyc-water-quality-complaints.csv --db=sqlite://examples/water-advanced.sqlite --key=unique_key --index-fields=\".*date,.*name,latitude,longitude,.*borough,status\" --overwrite",
@@ -65,7 +66,9 @@
     "eslint": "^7.17.0",
     "mocha": "^8.2.1",
     "node-fetch": "^2.6.1",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.5"
+  },
+  "devDependencies-disabled": {
     "terminalizer": "^0.7.2"
   }
 }
